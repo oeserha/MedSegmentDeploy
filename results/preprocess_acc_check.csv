@@ -1,0 +1,63 @@
+,Patient ID,Renumber,Reorientation,Size,Number,Orient
+0,000129_2022-08-12,False,False,True,False,True
+1,000133_2022-09-09,False,False,True,False,True
+2,000133_2022-10-05_vol133,False,False,True,False,False
+3,000165_2022-08-19,False,False,True,True,True
+4,000198_2023-04-10_ARFIpatient2,False,False,True,False,False
+5,ACRIN 6698_207837,False,False,True,False,False
+6,ACRIN 6698_253531,False,False,True,True,False
+7,ACRIN 6698_277831,True,False,True,True,False
+8,ACRIN 6698_283070,True,False,True,True,False
+9,ACRIN 6698_378885,True,False,True,True,False
+10,ACRIN 6998_649198,False,False,True,False,False
+11,ACRIN 6698_742356,False,False,True,False,True
+12,ACRIN 6698_932998,False,False,True,False,False
+13,ACRIN_6698_220471_everyone,True,False,True,True,True
+14,ACRIN_564701,True,False,True,True,False
+15,Brianne_ACRIN 6698-414844,False,False,True,False,False
+16,Brianne_Duke_038,True,True,True,False,True
+17,Duke_062,True,True,True,False,True
+18,Duke_068,True,True,True,False,True
+19,Duke_072,True,False,True,True,False
+20,Duke_075,True,False,True,True,False
+21,Duke_077,False,True,True,False,True
+22,Duke_078,True,True,True,False,True
+23,Duke_079,True,True,True,False,True
+24,Duke_081,True,False,True,True,False
+25,Duke_084,True,False,True,True,False
+26,Duke_094,True,False,True,True,False
+27,Duke_099,True,True,True,False,True
+28,Duke_102,False,True,True,False,True
+29,Duke_104,True,False,True,True,False
+30,Duke_106,True,False,True,True,False
+31,Duke_109,True,True,True,False,True
+32,Duke_112,True,False,True,True,False
+33,Duke_114,True,True,True,True,True
+34,Duke_129,True,True,True,False,True
+35,Duke_133,True,True,True,False,True
+36,Duke_147,True,True,True,False,True
+37,Duke_172,True,True,True,False,True
+38,Duke_189,True,False,True,True,True
+39,Duke_191,True,True,True,False,True
+40,Duke_196,True,False,True,False,False
+41,Duke_201,True,False,True,True,False
+42,Duke_218,True,True,True,False,True
+43,Duke_223,True,False,True,True,False
+44,Duke_257,True,True,True,True,True
+45,Duke_262,True,True,True,False,True
+46,Duke_281,True,True,True,True,True
+47,Duke_314,True,True,True,False,True
+48,Duke_319,True,True,True,False,True
+49,Duke_326,True,True,True,False,True
+50,Duke_328,False,True,True,False,True
+51,Duke_337,True,True,True,False,True
+52,Duke_371,True,False,True,True,False
+53,duke_patient001axdyn3,True,False,True,True,False
+54,Estee_Duke_014,True,False,True,True,False
+55,Estee_Duke_033,True,True,True,False,True
+56,Nicole_Duke_047,True,True,True,False,True
+57,Rachel_Duke_003,True,True,True,False,True
+58,Rachel_Duke_015,False,False,True,False,False
+59,Rachel_Duke_023,True,False,True,True,False
+60,Rachel_Duke_052,True,False,True,True,False
+61,Rachel_Duke_054,False,True,True,False,True
