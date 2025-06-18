@@ -12,6 +12,9 @@ import os
 import boto3
 import io
 
+os.chdir("/home/ra-ugrad/Documents/Haleigh/MedSegmentDeploy/")
+import src.credentials as credentials
+
 #TODO: edit path
 PATH = "/home/ra-ugrad/Documents/Segmentations/"
 
@@ -48,9 +51,9 @@ class CancerDataset(Dataset):
         patient = row['patient_id']
         bright_level = int((idx - row['Start_Index']) % row['Number of Brightness Levels'])
         if bright_level == 0:
-            bright_id = f"Brightness level {row["Brightness Level 1"]}"
+            bright_id = f"Brightness level 1"
         else:
-            bright_id = f"Brightness level {row["Brightness Level 2"]}"
+            bright_id = f"Brightness level 2"
 
         img_idx = int(((idx - row['Start_Index']) % row['Number of Slices'])+1)
         img_idx = f"{img_idx:05d}"
@@ -58,15 +61,14 @@ class CancerDataset(Dataset):
         # S3 details
         bucket = self.path
         key = f'MRIs/{patient}/MRI PNGs/{bright_id}/png_{img_idx}.png'
-        print(img_idx)
         
         # Download object from S3
-        s3 = boto3.client('s3')
+        s3 = boto3.client('s3', aws_access_key_id=credentials.ACCESS_KEY, aws_secret_access_key=credentials.SECRET_KEY)
         response = s3.get_object(Bucket=bucket, Key=key)
         image_data = response['Body'].read()
         
         try:
-            image = Image.open(io.BytesIO(image_data))
+            image = Image.open(io.BytesIO(image_data)).convert('RGB')
             if self.transform:
                 image = self.transform(image)
         except Exception as e:
